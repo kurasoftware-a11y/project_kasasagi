@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SUPICA KASASAGI | PROJECT KASASAGI</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&family=Noto+Serif+JP:wght@300;400;500&family=Noto+Sans+JP:wght@300;400&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <div class="noise"></div>
+  <div class="light light-01"></div>
+  <div class="light light-02"></div>
+
+  <header class="site-header">
+    <a href="#" class="brand">SUPICA KASASAGI</a>
+    <nav class="nav">
+      <a href="#concept">Concept</a>
+      <a href="#discography">Works</a>
+      <a href="#listen">Listen</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- hero -->
+    <section class="hero" id="hero">
+      <div class="hero-visual">
+        <div class="portrait-fragment"></div>
+        <div class="typography-shadow">KASASAGI</div>
+      </div>
+
+      <div class="hero-content">
+        <p class="eyebrow">PROJECT KASASAGI / KURASOFTWARE</p>
+
+        <h1>
+          <span>SUPICA</span>
+          <span>KASASAGI</span>
+        </h1>
+
+        <p class="hero-copy">
+          声は、姿よりも<br>
+          深く残る。
+        </p>
+
+        <p class="hero-text">
+          Acoustic J-Pop, silent emotion, and a trace of light.
+        </p>
+        <div class="hero-actions">
+          <a
+            class="button primary"
+            href="https://music.youtube.com/channel/UC92Hz8VSfMnLoW-1iq-6d2A"
+            target="_blank"
+            rel="noopener"
+          >
+            YouTube Music
+          </a>
+          <a
+            class="button primary"
+            href="https://open.spotify.com/intl-ja/artist/7L171VTCtymXjL0jFP9R0y?si=HktooHL3T6GmoRBkdG75Pg"
+            target="_blank"
+            rel="noopener"
+          >
+            Spotify
+          </a>
+          <a
+            class="button primary"
+            href="https://music.apple.com/us/artist/supica-kasasagi/6780665994"
+            target="_blank"
+            rel="noopener"
+          >
+            Apple Music
+          </a>
+          <a
+            class="button primary"
+            href="https://music.amazon.co.jp/artists/B0H5HBNZ2N/supica-kasasagi?marketplaceId=A1VC38T7YXB528&musicTerritory=JP&ref=dm_sh_BUI30nfJxCUxiFoMTJ53X91Oi"
+            target="_blank"
+            rel="noopener"
+          >
+            Amazon Music
+          </a>
+          <a class="button ghost" href="#discography">
+            View Works
+          </a>
+        </div>
+      </div>
+
+      <div class="scroll-mark">
+        <span></span>
+        Scroll
+      </div>
+      <div class="portrait-fragment"></div>
+    </section>
+
+    <!-- concept -->
+    <section class="section concept" id="concept">
+      <div class="section-number">01</div>
+
+      <div class="section-grid">
+        <h2>Concept</h2>
+
+        <div class="text-block">
+          <p class="lead">
+            音と言葉の余白から、存在が立ち上がる。
+          </p>
+
+          <p>
+            SUPICA KASASAGIは、PROJECT KASASAGIから生まれた音楽プロジェクト。
+            声、言葉、余白、アートワークがひとつの印象として残る音楽を描いている。
+          </p>
+
+          <p>
+            派手さではなく、静けさ。  
+            説明ではなく、余韻。  
+            姿ではなく、音と言葉によって浮かび上がる輪郭。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- discography -->
+    <section class="section discography" id="discography">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Works</p>
+          <h2>Discography</h2>
+        </div>
+        <p>
+          The sound leaves a trace.
+        </p>
+      </div>
+
+      <div class="discography-list" id="discography-list"></div>
+    </section>
+
+    <script src="./js/discography-data.js"></script>
+    <script src="./js/discography-render.js"></script>
+
+    <!-- listen -->
+    <section class="section listen" id="listen">
+      <div class="listen-bg-text">LISTEN</div>
+
+      <div class="listen-content">
+        <p class="eyebrow">Streaming</p>
+        <h2>まず、ひとつの曲から。</h2>
+
+        <p>
+          SUPICA KASASAGIの音楽に触れる入口として、
+          好きな場所で、好きな時間に、静かに再生してください。
+        </p>
+
+        <div class="streaming-links" id="streaming-links"></div>
+      </div>
+    </section>
+
+    <!-- label -->
+    <section class="label-section" id="label">
+      <p class="eyebrow">Label</p>
+      <p class="label-name">KURASOFTWARE</p>
+      <p>
+        SUPICA KASASAGI / PROJECT KASASAGI is presented by KURASOFTWARE.
+      </p>
+    </section>
+
+    <!-- social -->
+    <section class="social-section" id="social">
+      <p>
+        New songs, visuals, fragments and silence.
+      </p>
+
+      <div class="social-links">
+        <a href="https://music.youtube.com/channel/UC92Hz8VSfMnLoW-1iq-6d2A" target="_blank" rel="noopener">
+          YouTube Music
+        </a>
+        <a href="#" target="_blank" rel="noopener">YouTube</a>
+        <a href="#" target="_blank" rel="noopener">X</a>
+        <a href="#" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© SUPICA KASASAGI / PROJECT KASASAGI / KURASOFTWARE</p>
+  </footer>
+
+  <script>
+
+    const streamingLinks = [
+      {
+        name: "YouTube Music",
+        url: "https://music.youtube.com/channel/UC92Hz8VSfMnLoW-1iq-6d2A"
+      },
+      {
+        name: "Spotify",
+        url: "https://open.spotify.com/intl-ja/artist/7L171VTCtymXjL0jFP9R0y?si=HktooHL3T6GmoRBkdG75Pg"
+      },
+      {
+        name: "Apple Music",
+        url: "https://music.apple.com/us/artist/supica-kasasagi/6780665994"
+      },
+      {
+        name: "Amazon Music",
+        url: "https://music.amazon.co.jp/artists/B0H5HBNZ2N/supica-kasasagi?marketplaceId=A1VC38T7YXB528&musicTerritory=JP&ref=dm_sh_BUI30nfJxCUxiFoMTJ53X91Oi"
+      }
+    ];
+
+    const discographyList = document.getElementById("discography-list");
+
+    discographyList.innerHTML = discography.map((item) => `
+      <article class="work-card">
+        <a href="${item.streamingUrl || '#'}" target="_blank" rel="noopener" class="work-art">
+          <img src="${item.artwork}" alt="${item.title}">
+          <span class="work-glow"></span>
+        </a>
+
+        <div class="work-info">
+          <p class="work-meta">${item.type} / ${item.releaseDate}</p>
+          <h3>${item.title}</h3>
+          <p>${item.description}</p>
+          <p class="credit">${item.credit}</p>
+
+          <div class="work-links">
+            ${
+              item.streamingUrl
+                ? `<a href="${item.streamingUrl}" target="_blank" rel="noopener">Listen</a>`
+                : `<span>Coming Soon</span>`
+            }
+            ${
+              item.youtubeUrl
+                ? `<a href="${item.youtubeUrl}" target="_blank" rel="noopener">YouTube</a>`
+                : ""
+            }
+          </div>
+        </div>
+      </article>
+    `).join("");
+
+    const streamingContainer = document.getElementById("streaming-links");
+
+    streamingContainer.innerHTML = streamingLinks.map((item) => `
+      <a href="${item.url}" target="_blank" rel="noopener">
+        <span>${item.name}</span>
+        <small>Open</small>
+      </a>
+    `).join("");
+  </script>
+</body>
+</html>
