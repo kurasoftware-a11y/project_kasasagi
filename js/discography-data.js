@@ -48,24 +48,24 @@ const discography = [
   },
   {
     title: "サラリーマンへ",
-    releaseDate: "2026.7　COMING SOON",
+    releaseDate: "2026.7",
     type: "Single",
     artwork: "./assets/artworks/005.png",
     description:
       "立ち上がれ。",
     streamingUrl: YOUTUBE_MUSIC_URL,
-    youtubeUrl: "",
+    youtubeUrl: "https://music.youtube.com/watch?v=igoMSlGlQes&si=OwuJatRbo83Y-Lfw",
     credit: "SUPICA KASASAGI / PROJECT KASASAGI / KURASOFTWARE"
   },
   {
     title: "花火の羽根",
-    releaseDate: "2026.7　COMING SOON",
+    releaseDate: "2026.7",
     type: "Single",
     artwork: "./assets/artworks/006.png",
     description:
       "花火のように燃え、泡沫のように消える時間の中で、痛みは終わりではなく、今日を生き延びるための最後の温度として胸に残る。",
     streamingUrl: YOUTUBE_MUSIC_URL,
-    youtubeUrl: "",
+    youtubeUrl: "https://music.youtube.com/watch?v=uigbj-V3VkQ&si=fKuG6Fdd1Nj73meR",
     credit: "SUPICA KASASAGI / PROJECT KASASAGI / KURASOFTWARE"
   },
 ];
