@@ -4,13 +4,13 @@ const YOUTUBE_MUSIC_URL =
 const discography = [
   {
     title: "お家へ帰ろう",
-    releaseDate: "2026.7　COMING SOON",
+    releaseDate: "2026.7　NEW SINGLE",
     type: "Single",
     artwork: "./assets/artworks/007.png",
     description:
       "今日をうまく生きられなかったすべての心に差し出される、名もなき帰路の道。自分が自分であることを、まだ諦めなくていい場所へ。",
     streamingUrl: YOUTUBE_MUSIC_URL,
-    youtubeUrl: "",
+    youtubeUrl: "https://music.youtube.com/watch?v=AW7xJWxLbO0&si=yDsF59klEd1wia3W",
     credit: "SUPICA KASASAGI / PROJECT KASASAGI / KURASOFTWARE"
   },
   {
