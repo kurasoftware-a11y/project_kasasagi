@@ -3,6 +3,31 @@ const YOUTUBE_MUSIC_URL =
 
 const discography = [
   {
+    title: "春夏秋冬",
+    releaseDate: "2026.7.24　FIRST ALBUM COMING SOON",
+    type: "Album",
+    artwork: "./assets/artworks/008.png",
+    description:
+      "春の光、夏の雨、秋の影、冬の静寂が訪れる。",
+    streamingUrl: YOUTUBE_MUSIC_URL,
+    youtubeUrl: "",
+    credit: "SUPICA KASASAGI / PROJECT KASASAGI / KURASOFTWARE",
+    tracks: [
+      { title: "お家へ帰ろう (Special Version)" },
+      { title: "錆びた車輪" },
+      { title: "世界は鏡でぼくらを映す (Special Version)" },
+      { title: "山に降る雨" },
+      { title: "からっぽ (Special Version)" },
+      { title: "迷子の声" },
+      { title: "ネオンの涙 (Special Version)" },
+      { title: "周回軌道" },
+      { title: "一瞬の永遠 (Special Version)" },
+      { title: "カラフル" },
+      { title: "花火の羽根 (Special Version)" },
+      { title: "名無しの花" }
+    ]
+  },
+  {
     title: "お家へ帰ろう",
     releaseDate: "2026.7　NEW SINGLE",
     type: "Single",

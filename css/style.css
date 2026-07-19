@@ -281,6 +281,7 @@ h1 span {
 
 .hero-actions {
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
   margin-top: 44px;
 }
@@ -556,6 +557,17 @@ h1 span {
   mix-blend-mode: screen;
 }
 
+.work-number {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  z-index: 1;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: rgba(244, 241, 234, 0.72);
+}
+
 .work-meta {
   font-family: var(--font-ui);
   font-size: 11px;
@@ -575,6 +587,56 @@ h1 span {
 .work-info p {
   max-width: 620px;
   color: rgba(244, 241, 234, 0.58);
+}
+
+.track-list {
+  max-width: 620px;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.track-list-title {
+  margin-bottom: 12px !important;
+  font-family: var(--font-ui);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(244, 241, 234, 0.4) !important;
+}
+
+.track-list ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.track-list li {
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: baseline;
+  padding: 7px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  color: rgba(244, 241, 234, 0.72);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.track-list li a {
+  transition: color 0.3s ease;
+}
+
+.track-list li a:hover {
+  color: var(--ice);
+}
+
+.track-number,
+.track-list time {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  color: rgba(244, 241, 234, 0.4);
 }
 
 .credit {
