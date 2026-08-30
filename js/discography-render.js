@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const item = typeof track === "string" ? { title: track } : track;
     const number = String(index + 1).padStart(2, "0");
     const title = item.url
-      ? `<a href="${item.url}" target="_blank" rel="noopener">${item.title}</a>`
+      ? `<a href="${item.url}" target="_blank" rel="noopener noreferrer">${item.title}</a>`
       : `<span>${item.title}</span>`;
     const duration = item.duration ? `<time>${item.duration}</time>` : "";
 
@@ -31,36 +31,38 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
   };
 
-  discographyList.innerHTML = discography.map((item, index) => {
-    const number = String(index + 1).padStart(2, "0");
-    const tracks = renderTrackList(item.tracks);
-    const links = [
-      item.streamingUrl
-        ? `<a href="${item.streamingUrl}" target="_blank" rel="noopener">Listen</a>`
-        : "",
-      item.youtubeUrl
-        ? `<a href="${item.youtubeUrl}" target="_blank" rel="noopener">YouTube</a>`
-        : ""
-    ].join("");
+  if (!discographyList.querySelector(".work-card")) {
+    discographyList.innerHTML = discography.map((item, index) => {
+      const number = String(index + 1).padStart(2, "0");
+      const tracks = renderTrackList(item.tracks);
+      const links = [
+        item.streamingUrl
+          ? `<a href="${item.streamingUrl}" target="_blank" rel="noopener noreferrer">Listen</a>`
+          : "",
+        item.youtubeUrl
+          ? `<a href="${item.youtubeUrl}" target="_blank" rel="noopener noreferrer">YouTube</a>`
+          : ""
+      ].join("");
 
-    return `
-      <article class="work-card${tracks ? " work-card--album" : ""}">
-        <a class="work-art" href="${item.streamingUrl || "#"}" target="${item.streamingUrl ? "_blank" : "_self"}" rel="noopener" aria-label="${item.title} - Listen">
-          <img src="${item.artwork}" alt="${item.title}" loading="lazy">
-          <span class="work-number">${number}</span>
-          <span class="work-glow"></span>
-        </a>
-        <div class="work-info">
-          <p class="work-meta">${item.type} / ${item.releaseDate}</p>
-          <h3>${item.title}</h3>
-          <p class="work-description">${item.description}</p>
-          ${tracks}
-          <p class="credit">${item.credit}</p>
-          <div class="work-links">${links}</div>
-        </div>
-      </article>
-    `;
-  }).join("");
+      return `
+        <article class="work-card${tracks ? " work-card--album" : ""}">
+          <a class="work-art" href="${item.streamingUrl || "#discography"}" target="${item.streamingUrl ? "_blank" : "_self"}"${item.streamingUrl ? ' rel="noopener noreferrer"' : ""} aria-label="${item.title}を聴く">
+            <img src="${item.artwork}" alt="${item.type === "Album" ? "アルバム" : "シングル"}『${item.title}』のジャケット" width="1254" height="1254" loading="lazy" decoding="async">
+            <span class="work-number">${number}</span>
+            <span class="work-glow"></span>
+          </a>
+          <div class="work-info">
+            <p class="work-meta">${item.type} / ${item.releaseDate}</p>
+            <h3>${item.title}</h3>
+            <p class="work-description">${item.description}</p>
+            ${tracks}
+            <p class="credit">${item.credit}</p>
+            <div class="work-links">${links}</div>
+          </div>
+        </article>
+      `;
+    }).join("");
+  }
 
   const streamingLinks = [
     ["YouTube Music", "https://music.youtube.com/channel/UC92Hz8VSfMnLoW-1iq-6d2A"],
@@ -69,7 +71,9 @@ document.addEventListener("DOMContentLoaded", () => {
     ["Amazon Music", "https://music.amazon.co.jp/artists/B0H5HBNZ2N/supica-kasasagi?marketplaceId=A1VC38T7YXB528&musicTerritory=JP&ref=dm_sh_BUI30nfJxCUxiFoMTJ53X91Oi"]
   ];
 
-  streamingContainer.innerHTML = streamingLinks.map(([name, url]) => `
-    <a href="${url}" target="_blank" rel="noopener"><span>${name}</span><small>Open</small></a>
-  `).join("");
+  if (!streamingContainer.querySelector("a")) {
+    streamingContainer.innerHTML = streamingLinks.map(([name, url]) => `
+      <a href="${url}" target="_blank" rel="noopener noreferrer"><span>${name}</span><small>Open</small></a>
+    `).join("");
+  }
 });

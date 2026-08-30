@@ -4,7 +4,7 @@ const YOUTUBE_MUSIC_URL =
 const discography = [
   {
     title: "春夏秋冬",
-    releaseDate: "2026.7.24　FIRST ALBUM COMING SOON",
+    releaseDate: "2026.7.24",
     type: "Album",
     artwork: "./assets/artworks/008.png",
     description:
@@ -29,7 +29,7 @@ const discography = [
   },
   {
     title: "お家へ帰ろう",
-    releaseDate: "2026.7　NEW SINGLE",
+    releaseDate: "2026.7",
     type: "Single",
     artwork: "./assets/artworks/007.png",
     description:
@@ -105,3 +105,7 @@ const discography = [
     credit: "SUPICA KASASAGI / PROJECT KASASAGI / KURASOFTWARE"
   },
 ];
+
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = { discography, YOUTUBE_MUSIC_URL };
+}

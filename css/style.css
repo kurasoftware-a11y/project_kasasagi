@@ -213,7 +213,13 @@ h2 {
   inset: 8% 12% 0 0;
   background:
     linear-gradient(to bottom, rgba(5,5,6,0.06), rgba(5,5,6,0.95)),
-    url("./assets/supica-portrait.png") center / cover no-repeat;
+    url("../assets/supica-portrait.png") center / cover no-repeat;
+  background:
+    linear-gradient(to bottom, rgba(5,5,6,0.06), rgba(5,5,6,0.95)),
+    image-set(
+      url("../assets/supica-portrait.webp") type("image/webp"),
+      url("../assets/supica-portrait.png") type("image/png")
+    ) center / cover no-repeat;
   filter: grayscale(28%) contrast(1.08);
   opacity: 0.82;
   clip-path: polygon(16% 0, 100% 0, 82% 100%, 0 78%);
@@ -540,6 +546,12 @@ h1 span {
     transform 1s ease,
     filter 1s ease,
     opacity 1s ease;
+}
+
+.work-art picture {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .work-art:hover img {
