@@ -12,8 +12,8 @@ After editing the data, regenerate the crawlable HTML and structured data:
 node scripts/render-static.js
 ```
 
-The canonical URL is currently set to the repository's expected GitHub Pages
-URL. When a custom domain is selected, update `SITE_URL` in
+The production URL is `https://project-kasasagi.pages.dev/` (Cloudflare Pages).
+When a custom domain is selected, update `SITE_URL` in
 `scripts/render-static.js`, the metadata in `index.html`, `robots.txt`, and
 `sitemap.xml` together.
 

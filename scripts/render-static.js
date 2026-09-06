@@ -4,7 +4,7 @@ const { discography } = require("../js/discography-data.js");
 
 const ROOT = path.resolve(__dirname, "..");
 const INDEX_PATH = path.join(ROOT, "index.html");
-const SITE_URL = "https://kurasoftware-a11y.github.io/project_kasasagi/";
+const SITE_URL = "https://project-kasasagi.pages.dev/";
 const ARTIST_ID = `${SITE_URL}#artist`;
 
 const streamingLinks = [
@@ -141,6 +141,7 @@ const renderStructuredData = () => {
         "@id": ARTIST_ID,
         name: "SUPICA KASASAGI",
         url: SITE_URL,
+        alternateName: "スピカ カササギ",
         description: "アコースティックJ-Popを中心に、静かな感情と光の余韻を描く音楽プロジェクト。",
         genre: ["J-Pop", "Acoustic J-Pop"],
         sameAs: streamingLinks.map(([, url]) => url)

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kurasoftware-a11y.github.io/project_kasasagi/sitemap.xml
+Sitemap: https://project-kasasagi.pages.dev/sitemap.xml

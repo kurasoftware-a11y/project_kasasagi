@@ -165,6 +165,17 @@ h2 {
   letter-spacing: 0.015em;
 }
 
+.heading-caption {
+  display: block;
+  margin-top: 24px;
+  font-family: var(--font-ja);
+  font-size: clamp(14px, 1.6vw, 18px);
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.08em;
+  color: rgba(244, 241, 234, 0.72);
+}
+
 .lead {
   font-family: var(--font-serif-ja);
   font-size: clamp(24px, 3vw, 44px);
