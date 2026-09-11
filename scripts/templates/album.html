@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+{{HEAD}}
+</head>
+<body class="album-page">
+{{HEADER}}
+<main id="main">
+  <nav aria-label="パンくずリスト"><ol class="breadcrumb"><li><a href="/">ホーム</a></li><li aria-hidden="true">/</li><li><a href="/#discography">作品</a></li><li aria-hidden="true">/</li><li aria-current="page">{{ALBUM_TITLE}}</li></ol></nav>
+  <section class="album-hero" aria-labelledby="album-title">
+    <div class="album-cover">{{ALBUM_ART}}</div>
+    <div>
+      <p class="release-meta"><span class="tag">Album</span><time datetime="{{ALBUM_DATE_ISO}}">{{ALBUM_DATE}}</time></p>
+      <h1 id="album-title">{{ALBUM_TITLE}}</h1>
+      <p class="album-artist">SUPICA KASASAGI <span lang="en">/ SHUNKASHUTO</span></p>
+      <p class="release-copy">春の光、夏の雨、<br>秋の影、冬の静寂が訪れる。</p>
+      <div class="actions"><a class="button primary" href="{{ALBUM_STREAM_URL}}" target="_blank" rel="noopener noreferrer">YouTube Musicで聴く<span aria-hidden="true">↗</span></a><a class="text-link" href="#tracks">収録曲を見る<span aria-hidden="true">↓</span></a></div>
+      <dl class="album-facts"><div><dt>RELEASE</dt><dd>{{ALBUM_DATE_JA}}</dd></div><div><dt>TRACKS</dt><dd>全{{TRACK_COUNT}}曲</dd></div></dl>
+    </div>
+  </section>
+
+  <section class="section album-body" aria-label="アルバム紹介と収録曲">
+    <div class="season-lights" aria-hidden="true"><span class="season-light season-spring"></span><span class="season-light season-summer"></span><span class="season-light season-autumn"></span><span class="season-light season-winter"></span></div>
+    <div class="album-story">
+      <p class="section-kicker">ABOUT THE ALBUM</p>
+      <h2>季節はめぐる。<br>音は、心に残る。</h2>
+      <p>SUPICA KASASAGIのアルバム『{{ALBUM_TITLE}}』は、{{ALBUM_DATE_JA}}リリースの全{{TRACK_COUNT}}曲を収めた作品です。</p>
+      <p>「錆びた車輪」「山に降る雨」「迷子の声」「周回軌道」「カラフル」「名無しの花」と、6曲のSpecial Versionを収録。曲名を辿りながら、季節の移ろいと音と言葉の余韻に触れてください。</p>
+      <p class="album-credit">ARTIST / SUPICA KASASAGI<br>PROJECT / PROJECT KASASAGI<br>LABEL / KURASOFTWARE</p>
+    </div>
+    <div class="tracks" id="tracks">
+      <h2>Tracklist</h2><p class="tracks-intro">『{{ALBUM_TITLE}}』収録曲 / 全{{TRACK_COUNT}}曲</p>
+      <ol class="track-list">{{TRACKS}}</ol>
+      <a class="text-link back-link" href="{{ALBUM_STREAM_URL}}" target="_blank" rel="noopener noreferrer">アルバムをYouTube Musicで聴く<span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
+
+  <section class="section listen" id="listen" aria-labelledby="listen-title">
+    <div class="section-heading"><div><p class="section-kicker">LISTEN TO THE ALBUM</p><h2 id="listen-title">『{{ALBUM_TITLE}}』を聴く。</h2></div></div>
+    <div class="streaming-links album-streaming">{{ALBUM_LINKS}}</div>
+    <p class="section-note">ほかの作品や配信サービスは、<a class="inline-link" href="/#listen">アーティストページ一覧</a>から。</p>
+  </section>
+
+  <section class="section related-section" aria-labelledby="related-title">
+    <div class="section-heading"><div><p class="section-kicker">MORE MUSIC</p><h2 id="related-title">ほかの作品も。</h2></div><a class="text-link" href="/#discography">すべての作品<span aria-hidden="true">→</span></a></div>
+    <div class="release-grid">{{RELATED_RELEASES}}</div>
+  </section>
+</main>
+{{FOOTER}}
+</body>
+</html>

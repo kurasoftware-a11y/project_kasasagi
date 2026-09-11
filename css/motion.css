@@ -1,0 +1,109 @@
+/* Scroll effects are progressive enhancements. Content is visible by default. */
+.album-body {
+  position: relative;
+  isolation: isolate;
+}
+.season-lights {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1;
+}
+.season-light {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+.season-spring {
+  background: radial-gradient(ellipse at 8% 30%, #f2cfde 0%, transparent 72%);
+}
+.season-summer {
+  background: radial-gradient(ellipse at 22% 42%, #cce5d4 0%, transparent 76%);
+}
+.season-autumn {
+  background: radial-gradient(ellipse at 15% 56%, #efdbc1 0%, transparent 76%);
+}
+.season-winter {
+  background: radial-gradient(ellipse at 20% 70%, #cbdff0 0%, transparent 76%);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  [data-reveal-state] {
+    transition: opacity 650ms ease, transform 650ms cubic-bezier(.2,.65,.25,1);
+  }
+  [data-reveal-state="waiting"] {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  [data-reveal-state="visible"], [data-reveal-state="waiting"]:focus-within {
+    opacity: 1;
+    transform: none;
+  }
+  @supports (animation-timeline: view()) {
+    .hero {
+      view-timeline-name: --hero-scroll;
+      view-timeline-axis: block;
+    }
+    .hero-image {
+      animation: hero-depth 1ms linear both;
+      animation-timeline: --hero-scroll;
+      animation-range: exit 0% exit 100%;
+    }
+    .album-body {
+      view-timeline-name: --season-scroll;
+      view-timeline-axis: block;
+    }
+    .season-light {
+      animation: var(--season-animation) 1ms linear both;
+      animation-timeline: --season-scroll;
+      animation-range: entry 0% exit 100%;
+    }
+    .season-spring { --season-animation: spring-light; }
+    .season-summer { --season-animation: summer-light; }
+    .season-autumn { --season-animation: autumn-light; }
+    .season-winter { --season-animation: winter-light; }
+  }
+}
+
+@keyframes hero-depth {
+  from { transform: scale(1); }
+  to { transform: scale(1.06); }
+}
+@keyframes spring-light {
+  0%, 10% { opacity: .9; }
+  40%, 100% { opacity: 0; }
+}
+@keyframes summer-light {
+  0%, 10% { opacity: 0; }
+  35% { opacity: .9; }
+  65%, 100% { opacity: 0; }
+}
+@keyframes autumn-light {
+  0%, 35% { opacity: 0; }
+  65% { opacity: .9; }
+  95%, 100% { opacity: 0; }
+}
+@keyframes winter-light {
+  0%, 65% { opacity: 0; }
+  95%, 100% { opacity: .9; }
+}
+
+@media (max-width: 700px) and (prefers-reduced-motion: no-preference) {
+  [data-reveal-state] { transition-duration: 350ms; }
+  [data-reveal-state="waiting"] { opacity: .65; transform: translateY(6px); }
+  .hero-image { animation: none; transform: none; }
+  .season-lights { opacity: .45; }
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal-state] { opacity: 1; transform: none; transition: none; }
+  .hero-image { animation: none; transform: none; }
+  .season-light { animation: none; opacity: 0; }
+}
+
+/* A focused target and printed pages must never depend on an animation. */
+@media print {
+  [data-reveal-state] { opacity: 1 !important; transform: none !important; }
+  .hero-image { animation: none; transform: none; }
+  .season-lights { display: none; }
+}

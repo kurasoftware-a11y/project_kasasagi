@@ -4,31 +4,36 @@ const YOUTUBE_MUSIC_URL =
 const discography = [
   {
     title: "春夏秋冬",
+    slug: "shunkashuto",
     releaseDate: "2026.7.24",
     type: "Album",
     artwork: "./assets/artworks/008.png",
     description:
       "春の光、夏の雨、秋の影、冬の静寂が訪れる。",
-    streamingUrl: YOUTUBE_MUSIC_URL,
+    streamingUrl: "https://music.youtube.com/playlist?list=OLAK5uy_mKbP3riB9e7Ns4S6Zllepe1tEZ8fuAjck",
+    streamingLinks: [
+      { name: "YouTube Music", url: "https://music.youtube.com/playlist?list=OLAK5uy_mKbP3riB9e7Ns4S6Zllepe1tEZ8fuAjck" }
+    ],
     youtubeUrl: "",
     credit: "SUPICA KASASAGI / PROJECT KASASAGI / KURASOFTWARE",
     tracks: [
-      { title: "お家へ帰ろう (Special Version)" },
+      { title: "お家へ帰ろう (Special Version)", singleSlug: "ouchi-e-kaerou" },
       { title: "錆びた車輪" },
-      { title: "世界は鏡でぼくらを映す (Special Version)" },
+      { title: "世界は鏡でぼくらを映す (Special Version)", singleSlug: "sekai-wa-kagami-de-bokura-o-utsusu" },
       { title: "山に降る雨" },
-      { title: "からっぽ (Special Version)" },
+      { title: "からっぽ (Special Version)", singleSlug: "karappo" },
       { title: "迷子の声" },
-      { title: "ネオンの涙 (Special Version)" },
+      { title: "ネオンの涙 (Special Version)", singleSlug: "neon-no-namida" },
       { title: "周回軌道" },
-      { title: "一瞬の永遠 (Special Version)" },
+      { title: "一瞬の永遠 (Special Version)", singleSlug: "isshun-no-eien" },
       { title: "カラフル" },
-      { title: "花火の羽根 (Special Version)" },
+      { title: "花火の羽根 (Special Version)", singleSlug: "hanabi-no-hane" },
       { title: "名無しの花" }
     ]
   },
   {
     title: "お家へ帰ろう",
+    slug: "ouchi-e-kaerou",
     releaseDate: "2026.7",
     type: "Single",
     artwork: "./assets/artworks/007.png",
@@ -40,6 +45,7 @@ const discography = [
   },
   {
     title: "花火の羽根",
+    slug: "hanabi-no-hane",
     releaseDate: "2026.7",
     type: "Single",
     artwork: "./assets/artworks/006.png",
@@ -51,6 +57,7 @@ const discography = [
   },
   {
     title: "サラリーマンへ",
+    slug: "salaryman-e",
     releaseDate: "2026.7",
     type: "Single",
     artwork: "./assets/artworks/005.png",
@@ -62,6 +69,7 @@ const discography = [
   },
   {
     title: "一瞬の永遠",
+    slug: "isshun-no-eien",
     releaseDate: "2026.6",
     type: "Single",
     artwork: "./assets/artworks/004.png",
@@ -73,6 +81,7 @@ const discography = [
   },
   {
     title: "世界は鏡で僕らを映す",
+    slug: "sekai-wa-kagami-de-bokura-o-utsusu",
     releaseDate: "2026.6",
     type: "Single",
     artwork: "./assets/artworks/003.png",
@@ -84,6 +93,7 @@ const discography = [
   },
   {
     title: "からっぽ",
+    slug: "karappo",
     releaseDate: "2026.6",
     type: "Single",
     artwork: "./assets/artworks/002.png",
@@ -95,6 +105,7 @@ const discography = [
   },
   {
     title: "ネオンの涙",
+    slug: "neon-no-namida",
     releaseDate: "2026.6",
     type: "Single",
     artwork: "./assets/artworks/001.png",

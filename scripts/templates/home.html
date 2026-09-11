@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+{{HEAD}}
+</head>
+<body class="home-page">
+{{HEADER}}
+<main id="main">
+  <section class="hero" id="hero" aria-labelledby="artist-name">
+    <img class="hero-image" src="/assets/supica-portrait.webp" alt="光の中に立つSUPICA KASASAGIのメインビジュアル" width="1916" height="821" fetchpriority="high">
+    <div class="hero-content">
+      <p class="eyebrow">Sound, words &amp; a little light.</p>
+      <p class="hero-copy">音は、寄り添い。<br>光を灯す。</p>
+      <p class="hero-text">音と言葉の余韻を描く、<br>アコースティックJ-Pop。</p>
+      <div class="hero-actions"><a class="text-link" href="#latest">最新作『{{ALBUM_TITLE}}』<span aria-hidden="true">↘</span></a></div>
+    </div>
+    <div class="hero-signature"><p>スピカ カササギ<span>OFFICIAL WEBSITE</span></p><h1 id="artist-name">SUPICA KASASAGI</h1></div>
+  </section>
+
+  <section class="section latest" id="latest" aria-labelledby="latest-title">
+    <p class="section-index">01 / LATEST RELEASE</p>
+    <div class="latest-layout" id="work-01">
+      <a class="album-cover" href="{{ALBUM_PATH}}" aria-label="アルバム『{{ALBUM_TITLE}}』の作品詳細">{{ALBUM_ART}}</a>
+      <div>
+        <p class="release-meta"><span class="tag">Album</span><time datetime="{{ALBUM_DATE_ISO}}">{{ALBUM_DATE}}</time><span>{{TRACK_COUNT}} tracks</span></p>
+        <h2 id="latest-title">{{ALBUM_TITLE}}</h2>
+        <p class="release-copy">春の光、夏の雨、<br>秋の影、冬の静寂が訪れる。</p>
+        <p class="release-body">季節の移ろいとともに、音と言葉の余韻を。<br>SUPICA KASASAGIのアルバム『{{ALBUM_TITLE}}』。<br>「お家へ帰ろう (Special Version)」から<br>「名無しの花」まで、全{{TRACK_COUNT}}曲を収録。</p>
+        <div class="actions">
+          <a class="button primary" href="{{ALBUM_STREAM_URL}}" target="_blank" rel="noopener noreferrer">YouTube Musicで聴く<span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="{{ALBUM_PATH}}">作品・収録曲を見る<span aria-hidden="true">→</span></a>
+        </div>
+        <p class="latest-footnote">SUPICA KASASAGI / KURASOFTWARE</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section discography" id="discography" aria-labelledby="works-title">
+    <div class="section-heading"><div><p class="section-kicker">02 / DISCOGRAPHY</p><h2 id="works-title">Songs &amp; stories.</h2></div><p>楽曲・アルバム</p></div>
+    <div class="release-grid">{{RELEASES}}</div>
+  </section>
+
+  <section class="section concept" id="concept" aria-labelledby="about-title">
+    <div><p class="section-kicker">03 / ABOUT</p><h2 id="about-title">A little<br>light.</h2></div>
+    <div class="text-block">
+      <p class="lead">音と言葉の余白から、<br>記憶に触れる歌が生まれる。</p>
+      <p>SUPICA KASASAGI（スピカ カササギ）は、PROJECT KASASAGIから生まれた音楽プロジェクト。アコースティックJ-Popを軸とした楽曲を制作しています。</p>
+      <p>音、言葉、映像、アートワークがひとつの余韻として残る音楽をつくっています。</p>
+      <p>強さではなく、静けさ。説明ではなく、余韻。声ではなく、音と言葉によって浮かび上がる輪郭。</p>
+      <p class="project-credit">PROJECT KASASAGI / KURASOFTWARE</p>
+    </div>
+  </section>
+
+  <section class="section listen" id="listen" aria-labelledby="listen-title">
+    <div class="section-heading"><div><p class="section-kicker">04 / LISTEN</p><h2 id="listen-title">いつもの場所で。</h2></div><p>音楽配信・ストリーミング</p></div>
+    <p class="listen-intro">好きな場所で、好きな時間に。<br>いつもの音楽アプリで、SUPICA KASASAGIを聴く。</p>
+    <div class="streaming-links">{{ARTIST_LINKS}}</div>
+  </section>
+</main>
+{{FOOTER}}
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{{HEAD}}
+</head>
+<body class="home-page">
+{{HEADER}}
+<main id="main">
+  <section class="hero" id="hero" aria-labelledby="artist-name">
+    <img class="hero-image" src="/assets/supica-portrait.webp" alt="SUPICA KASASAGI, a figure standing in the light" width="1916" height="821" fetchpriority="high">
+    <div class="hero-content">
+      <p class="eyebrow">Sound, words &amp; a little light.</p>
+      <p class="hero-copy">Music that stays.<br>A little light.</p>
+      <p class="hero-text">Acoustic J-Pop.<br>Where sound and words linger.</p>
+      <div class="hero-actions"><a class="text-link" href="#latest">Discover Shunkashuto<span aria-hidden="true">↘</span></a></div>
+    </div>
+    <div class="hero-signature"><p><span lang="ja">スピカ カササギ</span><span>OFFICIAL WEBSITE</span></p><h1 id="artist-name">SUPICA KASASAGI</h1></div>
+  </section>
+
+  <section class="section latest" id="latest" aria-labelledby="latest-title">
+    <p class="section-index">01 / LATEST RELEASE</p>
+    <div class="latest-layout" id="work-01">
+      <a class="album-cover" href="{{ALBUM_PATH}}" aria-label="Explore the album Shunkashuto">{{ALBUM_ART}}</a>
+      <div>
+        <p class="release-meta"><span class="tag">Album</span><time datetime="{{ALBUM_DATE_ISO}}">{{ALBUM_DATE}}</time><span>{{TRACK_COUNT}} tracks</span></p>
+        <h2 id="latest-title" lang="ja">{{ALBUM_TITLE}}</h2>
+        <p class="title-reading">Shunkashuto · Four Seasons</p>
+        <p class="release-copy">Spring light. Summer rain.<br>Autumn shadows. Winter stillness.</p>
+        <p class="release-body">Sound and words linger as the seasons turn. Shunkashuto brings together {{TRACK_COUNT}} songs by SUPICA KASASAGI, from “Ouchi e Kaerou (Special Version)” to “Nanashi no Hana.”</p>
+        <div class="actions">
+          <a class="button primary" href="{{ALBUM_STREAM_URL}}" target="_blank" rel="noopener noreferrer">Listen on YouTube Music<span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="{{ALBUM_PATH}}">Explore the album<span aria-hidden="true">→</span></a>
+        </div>
+        <p class="latest-footnote">SUPICA KASASAGI / KURASOFTWARE</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section discography" id="discography" aria-labelledby="works-title">
+    <div class="section-heading"><div><p class="section-kicker">02 / DISCOGRAPHY</p><h2 id="works-title">Songs &amp; stories.</h2></div><p>Singles &amp; albums</p></div>
+    <p class="translation-note">Original titles are in Japanese. Romanizations and English meanings are provided as a guide.</p>
+    <div class="release-grid">{{RELEASES}}</div>
+  </section>
+
+  <section class="section concept" id="concept" aria-labelledby="about-title">
+    <div><p class="section-kicker">03 / ABOUT</p><h2 id="about-title">A little<br>light.</h2></div>
+    <div class="text-block">
+      <p class="lead">In the spaces between sound and words,<br>songs reach into memory.</p>
+      <p>SUPICA KASASAGI is a music project born from PROJECT KASASAGI, creating songs rooted in acoustic J-Pop.</p>
+      <p>Sound, words, visuals, and artwork come together, leaving a single, lingering impression.</p>
+      <p>Stillness. Resonance. A presence taking shape through sound and words.</p>
+      <p class="project-credit">PROJECT KASASAGI / KURASOFTWARE</p>
+    </div>
+  </section>
+
+  <section class="section listen" id="listen" aria-labelledby="listen-title">
+    <div class="section-heading"><div><p class="section-kicker">04 / LISTEN</p><h2 id="listen-title">Wherever you listen.</h2></div><p>Music &amp; streaming</p></div>
+    <p class="listen-intro">Your place. Your time.<br>Find SUPICA KASASAGI on your favorite music service.</p>
+    <div class="streaming-links">{{ARTIST_LINKS}}</div>
+  </section>
+</main>
+{{FOOTER}}
+</body>
+</html>

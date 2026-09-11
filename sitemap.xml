@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://project-kasasagi.pages.dev/</loc>
-    <lastmod>2026-09-07</lastmod>
-  </url>
+  <url><loc>https://project-kasasagi.pages.dev/</loc><lastmod>2026-09-11T20:10:03.316Z</lastmod></url>
+  <url><loc>https://project-kasasagi.pages.dev/releases/shunkashuto/</loc><lastmod>2026-09-11T20:10:03.331Z</lastmod></url>
+  <url><loc>https://project-kasasagi.pages.dev/releases/ouchi-e-kaerou/</loc><lastmod>2026-09-11T20:10:03.344Z</lastmod></url>
+  <url><loc>https://project-kasasagi.pages.dev/releases/hanabi-no-hane/</loc><lastmod>2026-09-11T20:10:03.354Z</lastmod></url>
+  <url><loc>https://project-kasasagi.pages.dev/releases/salaryman-e/</loc><lastmod>2026-09-11T20:10:03.365Z</lastmod></url>
+  <url><loc>https://project-kasasagi.pages.dev/releases/isshun-no-eien/</loc><lastmod>2026-09-11T20:10:03.376Z</lastmod></url>
+  <url><loc>https://project-kasasagi.pages.dev/releases/sekai-wa-kagami-de-bokura-o-utsusu/</loc><lastmod>2026-09-11T20:10:03.391Z</lastmod></url>
+  <url><loc>https://project-kasasagi.pages.dev/releases/karappo/</loc><lastmod>2026-09-11T20:10:03.403Z</lastmod></url>
+  <url><loc>https://project-kasasagi.pages.dev/releases/neon-no-namida/</loc><lastmod>2026-09-11T20:10:03.414Z</lastmod></url>
+  <url><loc>https://project-kasasagi.pages.dev/en/</loc><lastmod>2026-09-11T20:10:03.497Z</lastmod></url>
+  <url><loc>https://project-kasasagi.pages.dev/en/releases/shunkashuto/</loc><lastmod>2026-09-11T20:10:03.508Z</lastmod></url>
+  <url><loc>https://project-kasasagi.pages.dev/en/releases/ouchi-e-kaerou/</loc><lastmod>2026-09-11T20:10:03.520Z</lastmod></url>
+  <url><loc>https://project-kasasagi.pages.dev/en/releases/hanabi-no-hane/</loc><lastmod>2026-09-11T20:10:03.533Z</lastmod></url>
+  <url><loc>https://project-kasasagi.pages.dev/en/releases/salaryman-e/</loc><lastmod>2026-09-11T20:10:03.544Z</lastmod></url>
+  <url><loc>https://project-kasasagi.pages.dev/en/releases/isshun-no-eien/</loc><lastmod>2026-09-11T20:10:03.556Z</lastmod></url>
+  <url><loc>https://project-kasasagi.pages.dev/en/releases/sekai-wa-kagami-de-bokura-o-utsusu/</loc><lastmod>2026-09-11T20:10:03.569Z</lastmod></url>
+  <url><loc>https://project-kasasagi.pages.dev/en/releases/karappo/</loc><lastmod>2026-09-11T20:10:03.580Z</lastmod></url>
+  <url><loc>https://project-kasasagi.pages.dev/en/releases/neon-no-namida/</loc><lastmod>2026-09-11T20:10:03.596Z</lastmod></url>
 </urlset>
